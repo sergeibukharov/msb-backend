@@ -1,3 +1,10 @@
+# Main principles 
+1. [x] The application might be build or run ot test by pressing *one button* or executing a single `sh` script
+2. [x] All the checks are executed on local during build phase (testing, linting, etc...).
+3. [x] Local checks include: testing, java style checks, linters, potential bugs checks, security vulnerabilities checks
+4. [x] All the checks must be run all local before code push to remote (use githooks)
+
+
 # Requirements
 ## Java 21
 To install java 21 is to use [sdkman](https://sdkman.io/) 
@@ -31,3 +38,12 @@ the command spins up the database from `compose.yaml` and runs spring-boot
 
 # How to compile and test
 ```./gradlew build```
+
+# TO DO
+add checkstyle and java coding standard
+add githooks to build app before push it
+do we need spring modulith?
+add telemetry support (metrics)
+add spotbugs
+add owasp dependency checker
+add and configure jacoco
