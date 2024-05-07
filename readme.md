@@ -14,7 +14,7 @@ make sure Java 21 becomes is available `java --version`
 ## Docker and Colima 
 Make sure you have installed docker and colima, then start colima
  ```colima start --network-address```
-if you do not have it installed then use `brew install docker && brew install colima`
+if you do not have it installed then use `brew install docker && brew install colima && brew install docker-compose`
 
 Check docker and colima work correctly: `docker ps`
 
