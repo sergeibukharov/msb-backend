@@ -38,6 +38,7 @@ the command spins up the database from `compose.yaml` and runs spring-boot
 
 # How to compile and test
 ```./gradlew build```
+the dependency checks will take a longer time in the initial run. Probably ~30mins or more
 
 # TO DO
 add checkstyle and java coding standard
