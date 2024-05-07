@@ -2,6 +2,7 @@ plugins {
 	java
 	id("org.springframework.boot") version "3.2.5"
 	id("io.spring.dependency-management") version "1.1.4"
+	id("org.owasp.dependencycheck") version "9.1.0"
 }
 
 
@@ -16,6 +17,7 @@ allprojects {
 	apply {
 		plugin("java")
 		plugin("io.spring.dependency-management")
+		plugin("org.owasp.dependencycheck")
 	}
 
 	repositories {
@@ -36,6 +38,9 @@ allprojects {
 	tasks {
 		withType<Test> {
 			useJUnitPlatform()
+		}
+		check {
+			dependsOn("dependencyCheckAnalyze")
 		}
 	}
 }
