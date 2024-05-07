@@ -64,6 +64,11 @@ dependencies {
 	implementation("io.micrometer:micrometer-tracing-bridge-brave")
 	implementation("org.flywaydb:flyway-core")
 	implementation("org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j")
+	constraints {
+		implementation("org.bouncycastle:bcprov-jdk18on:1.78") {
+			because("previous versions have a vulnerability")
+		}
+	}
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	developmentOnly("org.springframework.boot:spring-boot-docker-compose")
