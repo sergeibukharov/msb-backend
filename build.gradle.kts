@@ -43,6 +43,10 @@ allprojects {
 			dependsOn("dependencyCheckAnalyze")
 		}
 	}
+
+	dependencyCheck {
+		suppressionFile = "tools/dependency-check/dependency-check-known-issues.xml"
+	}
 }
 
 java {

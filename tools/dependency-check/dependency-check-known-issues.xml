@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suppressions xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
+
+    <suppress>
+        <notes><![CDATA[
+   file name: jackson-databind-2.15.4.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/com\.fasterxml\.jackson\.core/jackson\-databind@.*$</packageUrl>
+        <cpe>cpe:/a:fasterxml:jackson-databind</cpe>
+    </suppress>
+
+    <suppress>
+        <notes><![CDATA[
+   file name: micrometer-tracing-bridge-brave-1.0.12.jar
+   ]]></notes>
+        <packageUrl regex="true">^pkg:maven/io\.micrometer/micrometer\-tracing\-bridge\-brave@.*$</packageUrl>
+        <cpe>cpe:/a:brave:brave</cpe>
+    </suppress>
+
+</suppressions>
